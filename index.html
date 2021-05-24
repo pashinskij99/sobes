@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap"
+		rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/all.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+	<section class="profile">
+		<div class="wrapper_form">
+			<div class="profile_main">
+				<h2 class="profile_h2">Profile</h2>
+				<div class="profile_selection">
+					<a href="#" class="profile_register profile_selection-active">Registration</a>
+					<a href="#" class="profile_sign">Sign in</a>
+				</div>
+			</div>
+			<div class="profile_social">
+				<div class="profile_social-title">You can sign in with social</div>
+				<div class="profile_social-icons">
+					<a href="#" class="profile_social-icon">
+						<img src="assets/icons/vk.svg" alt="vk">
+					</a>
+					<a href="#" class="profile_social-icon">
+						<img src="assets/icons/facebook.svg" alt="facebook">
+					</a>
+					<a href="#" class="profile_social-icon">
+						<img src="assets/icons/google.svg" alt="google">
+					</a>
+				</div>
+			</div>
+			<div class="profile_ifregister">
+				<form class="profile_register-form" method="POST">
+					<input type="text" name="name" placeholder="Your name"
+						class="profile_register-input profile_register-input-your_name" id="signup-name">
+					<input type="email" name="email" placeholder="E-mail" class="profile_register-input" id="signup-email">
+					<input type="password" name="pass" placeholder="Password"
+						class="profile_register-input profile_register-input-number" id="signup-pass">
+					<label class="profile_register-form-checkbox">
+						<input type="checkbox">
+						<span></span>
+						<div class="profile_register-form-checkbox-title">
+							I accept the terms of the offer of
+							<a class="profile_register-form-checkbox-link" href="#">
+								the privacy policy
+							</a>
+						</div>
+					</label>
+					<div class="profile_btns">
+						<input type="submit" value="Registration" class="profile_btns-register profile_btns-active"
+							id="signup-submit">
+						<input type="submit" value="Sign in" class="profile_btns-sign">
+					</div>
+				</form>
+				<form class="profile_login-form" method="POST">
+					<input type="email" name="email" placeholder="E-mail" class="profile_register-input" id="login-email">
+					<input type="password" name="pass" placeholder="Password"
+						class="profile_register-input profile_sign-input-password" id="login-pass">
+					<label class="profile_register-form-checkbox profile_sign-form-checkbox">
+						<input type="checkbox">
+						<span></span>
+						<div class="profile_register-form-checkbox-title">
+							Save your data?
+						</div>
+					</label>
+					<div class="profile_btns">
+						<input type="submit" value="Registration"
+							class="profile_btns-register profile_btns-register-forlogin">
+						<input type="submit" value="Sign in" class="profile_btns-sign profile_btns-active" id="login-submit">
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</section>
+
+
+
+	<script src="./js/ajax.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+
+</html>
